@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nova is a creative digital agency building modern websites and digital experiences.">
+  <title>Nova Agency | Creative Digital Solutions</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a href="#home" class="logo">NOVA<span>.</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="navLinks">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact" class="nav-btn">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <p class="tagline">CREATIVE DIGITAL AGENCY</p>
+        <h1>We Build Digital <span>Experiences</span></h1>
+        <p class="hero-text">We help businesses grow with modern websites, thoughtful design and smart digital solutions.</p>
+        <a href="#contact" class="primary-btn">Let's Talk <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="hero-orb orb-one" aria-hidden="true"></div>
+      <div class="hero-orb orb-two" aria-hidden="true"></div>
+    </section>
+
+    <section class="section container" id="about">
+      <p class="section-label">WHO WE ARE</p>
+      <h2>We Turn Ideas Into Reality</h2>
+      <p class="description">Nova is a creative digital agency focused on building beautiful, functional and user-friendly websites that help businesses make a strong first impression.</p>
+      <div class="stats">
+        <div><strong>Creative</strong><span>Ideas first</span></div>
+        <div><strong>Modern</strong><span>Clean design</span></div>
+        <div><strong>Responsive</strong><span>Every screen</span></div>
+      </div>
+    </section>
+
+    <section class="section services" id="services">
+      <div class="container">
+        <p class="section-label">WHAT WE DO</p>
+        <h2>Our Services</h2>
+        <div class="service-grid">
+          <article class="service-card"><div class="service-icon">✦</div><h3>Web Design</h3><p>Beautiful, clear layouts designed around your brand and customers.</p></article>
+          <article class="service-card"><div class="service-icon">⌘</div><h3>Web Development</h3><p>Fast, accessible websites built with modern frontend technologies.</p></article>
+          <article class="service-card"><div class="service-icon">▣</div><h3>Responsive Design</h3><p>Thoughtful experiences that work across phones, tablets and desktops.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="portfolio">
+      <p class="section-label">SELECTED WORK</p>
+      <h2>Featured Projects</h2>
+      <div class="portfolio-grid">
+        <article class="portfolio-card"><div class="project-art art-one"><span>01</span></div><h3>Business Website</h3><p>A polished online home for a growing business.</p></article>
+        <article class="portfolio-card"><div class="project-art art-two"><span>02</span></div><h3>Creative Portfolio</h3><p>A bold portfolio concept for independent creators.</p></article>
+      </div>
+      <p class="demo-note">These are sample portfolio concepts for this demo project.</p>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container contact-layout">
+        <div><p class="section-label">GET IN TOUCH</p><h2>Have a project in mind?</h2><p class="description">Tell us a little about what you are building. This demo form shows a confirmation in your browser; it does not send an email.</p></div>
+        <form id="contactForm" class="contact-form">
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          <label for="message">Your message</label>
+          <textarea id="message" name="message" placeholder="Tell us about your project..." required></textarea>
+          <button type="submit" class="primary-btn">Send Message <span aria-hidden="true">→</span></button>
+          <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container footer-inner"><a href="#home" class="logo">NOVA<span>.</span></a><p>© <span id="year">2026</span> Nova Agency. Demo project.</p></div></footer>
+</body>
+</html>
